@@ -74,7 +74,7 @@ jobs:
 
       - name: Build extensions (${{ matrix.chunk.number }})
         env:
-          MODULES: :src:es:shadowmanga
+          MODULES: ${{ join(matrix.chunk.modules, ' ') }}
         run: |
           ./gradlew $MODULES
 
