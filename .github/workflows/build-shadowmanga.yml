@@ -21,10 +21,10 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build ShadowManga only
-        run: ./gradlew :lib-multisrc:madara:assembleRelease
+        run: ./gradlew :lib-multisrc:madara:assemble
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: shadowmanga-apk
-          path: "**/*.apk"
+          path: "**/build/outputs/**/*.apk"
