@@ -7,4 +7,3 @@ class ShadowManga : Madara(
     "https://shadowmanga.es",
     "es"
 )
-// trigger build
